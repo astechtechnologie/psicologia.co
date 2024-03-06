@@ -23,19 +23,17 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    
 }
 
 .nav1 li, .nav-right li {
-   margin-right: 15px;
-    padding: 10px;
+    margin-right: 10px;
+    padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    font-size: 16px;
 }
 
 .nav1 li:hover, .nav-right li:hover {
-    
+    background-color: #eee;
 }
 
 .cuerpomenu {
@@ -91,10 +89,10 @@ nav ul li a:hover {
 
 .contenido {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 5px;
+    border-radius: 2px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
+    margin-top: 20px;
 }
 #quien-soy{
     background-color: #BBE5E1
@@ -124,6 +122,12 @@ footer {
     margin: 45px auto; /* Centra la caja horizontalmente */
     overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el ancho máximo */
     text-align: center; /* Centra la imagen dentro de la caja */
+}
+
+.image-container img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    display: block; /* Evita que la imagen tenga espacio extra debajo */
 }
 
 .image-container img {
