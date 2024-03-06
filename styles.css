@@ -1,6 +1,12 @@
-/* Agrega estilos para la posición de la navegación */
-.nav-right {
-    float: right;
+@media only screen and (max-width: 768px) {
+    .cuerpomenu {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-right {
+        float: none;
+        margin-top: 10px;
+    }
 }
 
 /* Resto de estilos */
