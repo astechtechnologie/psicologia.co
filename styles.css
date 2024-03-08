@@ -99,7 +99,7 @@ footer {
 }
 
 .imagen {
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
     align-items: center;
     margin: 3%;
@@ -163,8 +163,9 @@ footer {
     margin-top: 200px; /* Cambia este valor según sea necesario */
 }
 .imagen-quien-soy {
+
     float: left; /* Hace que la imagen se alinee a la izquierda */
-    margin-right: 20px; /* Agrega un margen derecho para separar la imagen del texto */
+    margin-right: 25px; /* Agrega un margen derecho para separar la imagen del texto */
 }
 
 .texto-quien-soy {
@@ -180,5 +181,51 @@ footer {
     margin: 0 auto; /* Centrar horizontalmente */
     padding: 20px; /* Espaciado interno */
 }
+.container {
+    width: 100%; /* Cambiar el ancho al 100% */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 2px; /* Espaciado interno */
+    display: flex; /* Mostrar los contenidos en línea */
+    flex-wrap: wrap; /* Permitir el ajuste de línea */
+}
+.imagen-quien-soy {
+    float: left;
+    margin-right: 40px; /* Aumenta el margen derecho para separar la imagen del texto */
+    width: 40%; /* Ajusta el ancho al 40% del contenedor padre */
+}
 
+.contenido-psicoterapia {
+    background-color: #E8B890;
+    display: flex; /* Utiliza flexbox para los elementos dentro del contenedor */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.contenido-psicoterapia > div {
+    margin: 0 10px; /* Agrega un margen entre los elementos */
+}
+.color-precio{
+    background-color: #BBE5E1;
+}
+.imagen-producto {
+    max-width: 10px; /* Establece un ancho máximo de 150px para la imagen */
+    height: auto; /* Mantiene la altura automática para mantener la proporción */
+}
+.contenido-psicoterapia > div {
+    max-width: 200px; /* Ancho máximo para el div contenedor */
+    margin: 0 auto; /* Centra horizontalmente el div */
+    text-align: center; /* Centra la imagen horizontalmente */
+}
+
+.imagen-producto {
+    max-width: 200px;
+    height: auto;
+    align-items: center;
+    margin: 3%;
+}
+.imagen-producto2{
+    max-width: 200px;
+    height: auto;
+    align-items: center;
+    margin: 3%;
+}
 
