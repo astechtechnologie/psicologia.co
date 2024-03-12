@@ -22,10 +22,11 @@ header {
 }
 
 .nav1 li:hover, .nav-right li:hover {
-    background-color: #eee;
+    background-color: #530e0e;
 }
 
 .cuerpomenu {
+    background-color: #BBE5E1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,6 +66,10 @@ header {
 .nav1 ul li:last-child,
 .nav-right ul li:last-child {
     margin-right: 0; /* Eliminar el margen derecho del último elemento de la lista */
+}
+.color-text-list{
+    color: #000000;
+    font-weight: bold;
 }
 
 .container {
@@ -169,6 +174,12 @@ footer {
 }
 
 .texto-quien-soy {
+    margin-top: 6%;
+    margin-left: 20px; /* Cambia el valor según sea necesario */
+    margin-right: 20px; /* Cambia el valor según sea necesario */
+    padding-left: 18px; /* Ajusta el padding izquierdo para que sea ligeramente menor que las márgenes */
+    padding-right: 18px; /* Ajusta el padding derecho para que sea ligeramente menor */
+    border: 2px solid rgb(0, 0, 0); /* Cambia "blue" al color deseado */
     overflow: hidden; /* Evita que el texto se superponga a la imagen */
 }
 .contenido-psicoterapia {
@@ -187,14 +198,20 @@ footer {
     padding: 2px; /* Espaciado interno */
     display: flex; /* Mostrar los contenidos en línea */
     flex-wrap: wrap; /* Permitir el ajuste de línea */
+    height: 600px; /* Cambia el valor a la altura deseada */
 }
 .imagen-quien-soy {
     float: left;
+    margin-top: 90px;
+    margin-left: 150px;
     margin-right: 40px; /* Aumenta el margen derecho para separar la imagen del texto */
     width: 40%; /* Ajusta el ancho al 40% del contenedor padre */
+    transform: scale(1.5); /* Escala la imagen al 120% cuando se pasa el ratón por encima */
 }
 
 .contenido-psicoterapia {
+    width: 100%;
+    height: 600px;
     background-color: #E8B890;
     display: flex; /* Utiliza flexbox para los elementos dentro del contenedor */
     justify-content: center; /* Centra los elementos horizontalmente */
@@ -211,6 +228,7 @@ footer {
     height: auto; /* Mantiene la altura automática para mantener la proporción */
 }
 .contenido-psicoterapia > div {
+    
     max-width: 200px; /* Ancho máximo para el div contenedor */
     margin: 0 auto; /* Centra horizontalmente el div */
     text-align: center; /* Centra la imagen horizontalmente */
@@ -227,5 +245,89 @@ footer {
     height: auto;
     align-items: center;
     margin: 3%;
+}
+/* Estilos para el calendario */
+#calendario {
+    padding: 7%;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 18px; /* Aumenta el tamaño de la fuente */
+}
+
+#calendario table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendario th,
+#calendario td {
+    width: 30px; /* Ancho fijo para las celdas */
+    height: 20px; /* Altura fija para las celdas */
+    padding: 5px; /* Ajusta el espacio dentro de las celdas */
+    border: 1px solid #000000;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+#calendario th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#calendario td {
+    background-color: #fff;
+}
+
+#calendario td.current-day {
+    background-color: lightblue;
+}
+
+#calendario td:hover {
+    background-color: #f0f0f0;
+}
+.producto{
+    padding: 2%;
+    border: 2px solid rgb(0, 0, 0); /* Cambia "blue" al color deseado */    
+    height: 400px; /* Ajusta la altura según sea necesario */
+}
+.contenido-caja-calendario{
+    padding: 20px; /* Aumenta el padding para dar más espacio al botón */
+    
+}
+.caja-boton-cale{
+    background-color: #BA8C75;
+    padding: 8px 8px; /* Aumenta el padding del botón */
+    margin-left: 68px; /* Ajusta el margen izquierdo del botón */
+    font-size: 15px; /* Ajusta el tamaño de la fuente del botón */
+    text-align: center; /* Centra el texto dentro del botón */
+    width: 100%; /* El contenido ocupa todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    border-radius: 20px; /* Hace que los bordes del botón sean redondos */
+    font-weight: bold;
+}
+.contenido-psicoterapia {
+    position: relative; /* Añade posición relativa al contenedor padre */
+}
+
+.agenda-gratis {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-40%);
+    transform: translateY(-20px); /* Mueve el elemento hacia arriba 20px */
+    width: 100%; /* Ajusta el ancho del botón */
+    text-align: center;
+    margin-bottom: 20px; /* Añade un margen inferior para separarlo del contenido superior */
+    
+}
+.agenda-gratis-btn {
+    background-color: #BA8C75;
+    padding: 7px 8px; /* Aumenta el padding del botón */
+    width: 2000px; /* Ancho automático */
+    min-width: 500px; /* Ancho mínimo */
+    max-width: 900px; /* Ancho máximo */
+    text-align: center;
+    border-radius: 20px; /* Hace que los bordes del botón sean redondos */
+    font-weight: bold;
+    font-size: 16px; /* Ajusta el tamaño de la fuente del botón */
 }
 
