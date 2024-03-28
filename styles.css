@@ -331,3 +331,58 @@ footer {
     font-size: 16px; /* Ajusta el tamaño de la fuente del botón */
 }
 
+
+@media screen and (max-width: 768px) {
+    .cuerpomenu {
+        flex-direction: column; /* Cambia la dirección del flex a vertical */
+        align-items: center; /* Centra los elementos en el eje vertical */
+    }
+
+    .nav-container {
+        flex-direction: column; /* Cambia la dirección del flex a vertical */
+        align-items: center; /* Centra los elementos en el eje vertical */
+    }
+
+    .logo-li {
+        margin-bottom: 20px; /* Agrega espacio debajo del logo */
+    }
+
+    .image-container {
+        margin-top: 50px; /* Reduce el espacio superior */
+    }
+
+    .contenido {
+        max-width: 90%; /* Ajusta el ancho máximo */
+    }
+
+    .imagen-quien-soy {
+        float: none; /* Elimina el flotado */
+        margin: 0 auto; /* Centra la imagen */
+        width: 100%; /* Ancho completo */
+        max-width: 300px; /* Ancho máximo */
+    }
+
+    .texto-quien-soy {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-right: 0; /* Elimina el margen derecho */
+        padding: 10px; /* Aumenta el espacio interno */
+        border: none; /* Elimina el borde */
+    }
+
+    .contenido-psicoterapia {
+        flex-direction: column; /* Cambia la dirección del flex a vertical */
+    }
+
+    .producto {
+        margin-bottom: 20px; /* Agrega espacio entre productos */
+    }
+
+    .agenda-gratis {
+        position: static; /* Revierte la posición al valor predeterminado */
+        margin-top: 20px; /* Agrega espacio entre la agenda gratis y los productos */
+    }
+
+    .agenda-gratis-btn {
+        width: 90%; /* Ajusta el ancho del botón */
+    }
+}
